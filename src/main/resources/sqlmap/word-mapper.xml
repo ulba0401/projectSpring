@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="word-mapper">
+
+	<select id="ascList" resultType="VO.WordVO">
+		select abbword, fullname, explanation, korword, unit from diclist order by abbword
+	</select>
+
+	<select id="unitAllList" resultType="VO.WordVO">
+		select abbword, fullname, explanation, korword, unit from diclist order by unit,abbword
+	</select>
+</mapper>
