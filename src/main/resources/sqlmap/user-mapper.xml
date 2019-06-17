@@ -3,7 +3,7 @@
 <mapper namespace="user-mapper">
 
 <select id="userList" resultType="VO.UserVO">
-	select id, pw, email, admin from userlist where isdel='0' order by 1
+	select id, pw, email, admin, name from userinfo where isdel='0' order by 1
 </select>
 
 </mapper>

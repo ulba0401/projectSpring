@@ -16,7 +16,7 @@ public class WordController {
 	
 	@RequestMapping(value="/wordselect", method= {RequestMethod.GET, RequestMethod.POST})
 	public String selectAllList(Model model, @RequestParam String methode) {
-		System.out.println("wordListConn Succ");
+		System.out.println("wordselect Succ");
 		System.out.println(methode);
 		
 		model.addAttribute("wlist", service.selectAllList(methode) );

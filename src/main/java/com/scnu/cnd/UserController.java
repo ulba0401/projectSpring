@@ -14,7 +14,7 @@ public class UserController {
 	
 	@RequestMapping(value="/userselect", method= {RequestMethod.GET, RequestMethod.POST})
 	public String selectUser(Model model) {
-		System.out.println("userListConn Succ");
+		System.out.println("userselect Succ");
 		
 		model.addAttribute("ulist", service.selectAllUser());
 		System.out.println(service.selectAllUser().size());
